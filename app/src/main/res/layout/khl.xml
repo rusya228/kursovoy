@@ -4,7 +4,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="@color/grey"
+    >
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -22,19 +23,23 @@
             android:src="@drawable/khl" />
 
         <ImageButton
+android:onClick="onClick"
             android:id="@+id/whl_btn_k"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
+            android:layout_marginTop="5dp"
             android:layout_gravity="left"
             android:layout_marginLeft="10dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/whl" />
 
         <ImageButton
+android:onClick="onClick"
             android:id="@+id/mhl_btn_k"
             android:layout_width="wrap_content"
             android:layout_height="59dp"
             android:layout_gravity="right"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="10dp"
             android:contentDescription="@string/app_name"
             android:src="@drawable/mhl" />
@@ -42,7 +47,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="-767dp"
+        android:layout_marginTop="-784dp"
         android:layout_height="70dp"
         android:background="@color/panel">
 
@@ -65,4 +70,21 @@
             android:textStyle="bold"
             android:text="Континентальная Хоккейная Лига" />
     </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="773dp"
+        android:layout_marginBottom="48dp">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="773dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
 </LinearLayout>

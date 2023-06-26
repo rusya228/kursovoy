@@ -11,6 +11,7 @@
         android:layout_width="421dp"
         android:layout_height="165dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="250dp"
         android:src="@drawable/component_20" />
 

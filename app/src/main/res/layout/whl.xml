@@ -8,7 +8,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="675dp"
+        android:layout_marginTop="727dp"
         android:layout_height="56dp"
         android:background="@color/panel"
         >
@@ -43,7 +43,7 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="-731dp"
+        android:layout_marginTop="-784dp"
         android:layout_height="70dp"
         android:background="@color/panel">
 

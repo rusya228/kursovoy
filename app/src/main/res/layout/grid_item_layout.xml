@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:fillViewport="true">
+<ImageView
+    android:src="@drawable/khl"
+    android:id="@+id/imageView"
+    android:layout_width="40dp"
+    android:layout_height="40dp"/>
+
+    <TextView
+        android:id="@+id/team1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-32dp"
+        android:paddingLeft="50dp"
+        android:text="Кхл"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_medium"/>
+    <TextView
+        android:id="@+id/team1goal"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-21dp"
+        android:paddingRight="25dp"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_medium"/>
+
+    <ImageView
+        android:src="@drawable/mhl"
+        android:id="@+id/imageView2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/team2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-32dp"
+        android:paddingLeft="50dp"
+        android:text="Кхл"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_medium"/>
+    <TextView
+        android:id="@+id/team2goal"
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-21dp"
+        android:paddingRight="25dp"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:fontFamily="@font/inter_medium"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.3sp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/panel"/>
+
+
+</LinearLayout>

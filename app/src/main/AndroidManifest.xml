@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,14 +13,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sport"
         tools:targetApi="31">
+
         <activity
-            android:name=".WHL"
+            android:name=".Page_table" />
+
+        <activity
+            android:name=".Page_sostav" />
+
+        <activity
+            android:name=".MatchPage"/>
+
+        <activity
+            android:name=".KHL"
             android:exported="true"/>
+
         <activity
             android:name=".MHL"
             android:exported="true"/>
+
         <activity
-            android:name=".KHL"
+            android:name=".WHL"
+            android:exported="true"/>
+
+        <activity
+            android:name=".SPLASH"
             android:exported="true">
 
             <intent-filter>
@@ -31,7 +48,10 @@
 
         </activity>
 
-      
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
 
     </application>
 
