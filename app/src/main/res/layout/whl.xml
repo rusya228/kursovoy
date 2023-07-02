@@ -8,42 +8,6 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="727dp"
-        android:layout_height="56dp"
-        android:background="@color/panel"
-        >
-
-        <ImageButton
-            android:id="@+id/khl_btn_w"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="1dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/khl" />
-
-        <ImageButton
-            android:id="@+id/whl_btn_w"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_gravity="left"
-            android:layout_marginLeft="10dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/whl" />
-
-        <ImageButton
-            android:id="@+id/mhl_btn_w"
-            android:layout_width="wrap_content"
-            android:layout_height="59dp"
-            android:layout_gravity="right"
-            android:layout_marginEnd="10dp"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/mhl" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="-784dp"
         android:layout_height="70dp"
         android:background="@color/panel">
 
@@ -66,4 +30,60 @@
             android:textStyle="bold"
             android:text="Высшая Хоккейная Лига" />
     </FrameLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="773dp"
+        android:layout_marginBottom="48dp">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="match_parent"
+            android:layout_height="773dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="48dp" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/panel"
+        android:layout_marginTop="-160dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <ImageView
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/whl" />
+
+        <ImageView
+            android:onClick="onClick"
+            android:id="@+id/khl_btn_w"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/khl" />
+
+        <ImageView
+            android:id="@+id/mhl_btn_w"
+            android:onClick="onClick"
+            android:layout_marginTop="-2dp"
+            android:layout_marginLeft="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/mhl" />
+
+
+    </LinearLayout>
+
 </LinearLayout>

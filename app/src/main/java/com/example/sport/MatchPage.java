@@ -213,6 +213,7 @@ public class MatchPage extends Activity {
             overridePendingTransition(0,0);
         }
         public void toTable(View v){
+        Page_table.idMatch = idMatch;
         startActivity(new Intent(this, Page_table.class));
         overridePendingTransition(0,0);
         }

@@ -206,12 +206,13 @@ public class Page_sostav extends Activity {
         private String Title;
     }
 
-
     public void toMatchPage(View v){
+        MatchPage.idMatch=idMatch;
         startActivity(new Intent(this, MatchPage.class));
         overridePendingTransition(0,0);
     }
     public void toTable(View v){
+        Page_table.idMatch=idMatch;
         startActivity(new Intent(this, Page_table.class));
         overridePendingTransition(0,0);
     }

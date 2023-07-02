@@ -39,8 +39,6 @@ public class KHL extends Activity {
         swipeRefreshLayout = findViewById(R.id.swipeRefreshLayout);
         GridView gridView = findViewById(R.id.gridView);
 
-
-
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -67,16 +65,6 @@ public class KHL extends Activity {
             }
         });
 
-    }
-
-    public void onClick(View v) {
-        if (v.getId()== R.id.mhl_btn_k){
-            Intent intent1 = new Intent(KHL.this, MHL.class);
-            startActivity(intent1);}
-
-        if( v.getId()== R.id.whl_btn_k){
-            Intent intent2 = new Intent(KHL.this, WHL.class);
-            startActivity(intent2);}
     }
 
     public void toMHL(View view){
@@ -162,7 +150,17 @@ public class Match{
 public void tomatchpage(){
         startActivity(new Intent(this, MatchPage.class ));
 }
+
+    public void tMHL(View v){
+        startActivity(new Intent(this, MHL.class));
+        overridePendingTransition(0,0);
     }
+    public void tWHL(View v){
+        startActivity(new Intent(this, WHL.class));
+        overridePendingTransition(0,0);
+    }
+    }
+
 
 
 

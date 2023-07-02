@@ -51,7 +51,7 @@
 
                         <ImageView
                             android:id="@+id/imageView"
-                            android:layout_width="match_parent"
+                            android:layout_width="100dp"
                             android:layout_height="100dp"
                             android:src="@drawable/khl" />
 
@@ -140,7 +140,7 @@
                         <ImageView
                             android:src="@drawable/mhl"
                             android:id="@+id/imageView2"
-                            android:layout_width="match_parent"
+                            android:layout_width="100dp"
                             android:layout_height="100dp"
                             />
                         <TextView
